@@ -31,6 +31,7 @@ video.hidden {
 
 button {
     width: 100%;
+    margin-bottom:50px;
     height: 80px;
     background: transparent;
     font-size: 48px;
