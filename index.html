@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="column column-50 column-offset-25">
+                <h1 class="pln">
+                    Happy Birthday Kaddy
+                    <br /> 🎉🎉🎉
+                </h1>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-50 column-offset-25">
+                <p id="text-container">
+                    Heute ist dein besonderer Tag.
+                    <br />
+                    <br />
+                    Ich wuensche dir aus dem tiefsten Herzen alles gute zum Geburtstag.
+                    <br />
+                    Du denkst dir bestimmt wieso das ganze ding mit der Website etc. ???
+                    <br />
+                    <br />
+                    Naja ich waere nicht der der ich bin wenn ich nicht was besonderes organisieren wuerde.
+                    <br />
+                    <br />
+                    Ich sag mal so, ich bin die letzten Tage/Wochen jemanden auf den Sack gegangen um ein sehr
+                    persoehnliches Geschenk zu besorgen.
+                    <br />
+                    <br />
+                    Ich haetter dir auch irgendwas kaufen koennen aber ich dachte das ist doch schon wesentlich cooler.
+                    <br />
+                    So aber genug spannung aufgebaut.
+                </p>
+                <video id="video" class="hidden" src="./assets/suprise.mp4"></video>
+
+                <button id="suprise-btn">Zeig her!</button>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var textContainer = $("#text-container");
+        var video = $("#video");
+        var textHidden = false;
+        $("#suprise-btn").on("click", function (event) {
+            if (!textHidden) {
+                $('#suprise-btn').html('Zurueck');
+                textContainer.addClass('hidden')
+                video.removeClass('hidden')
+            }
+            else {
+                $('#suprise-btn').html('Zeig her');
+                textContainer.removeClass('hidden');
+                video.addClass('hidden')
+            }
+            textHidden = !textHidden;
+
+        });
+    </script>
+</body>
+
+</html>

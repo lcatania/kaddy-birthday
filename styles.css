@@ -1,0 +1,39 @@
+htm {
+    overflow-y: hidden;
+}
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(360deg, rgba(2, 0, 36, 1) 52%, rgba(150, 31, 31, 1) 100%);
+    overflow-y: hidden;
+}
+
+h1 {
+    color: white;
+    font-size: 15rem;
+    text-align: center;
+    font-family: "Staatliches", cursive;
+}
+
+p {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+}
+
+p.hidden {
+    display: none;
+}
+
+video.hidden {
+    display: none;
+}
+
+button {
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    font-size: 48px;
+    border-color: rgba(150, 31, 31, 1);
+    border-width: 6px;
+}
